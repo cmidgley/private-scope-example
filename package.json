@@ -1,0 +1,12 @@
+{
+    "name": "module-test",
+    "main": "main.js",
+    "type": "module",
+    "scripts": {
+        "run:sim": "mcconfig -m -d",
+        "run:node": "node --experimental-vm-modules --no-warnings main.js"
+    },
+    "imports": {
+        "#example": "./modules/example/index.js"
+    }
+}
