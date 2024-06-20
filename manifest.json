@@ -3,13 +3,15 @@
 		"$(MODDABLE)/examples/manifest_base.json"
 	],
 	"modules": {
-		"root/main": "./src/main.js",
+		"root/main": "./src/main",
 
-		"root/#example": "./src/example/index.js",
-		"example/do-something": "./src/example/do-something.js",
+		"root/#example": "./src/#example",
+		"example/index": "./src/example/index",
+		"example/do-something": "./src/example/do-something",
 
-		"root/#another": "./src/another/index.js",
-		"another/do-more": "./src/another/do-more.js"
+		"root/#another": "./src/#another",
+		"another/index": "./src/another/index",
+		"another/do-more": "./src/another/do-more"
 	},
 	"creation": {
 		"main": "root/main"
