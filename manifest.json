@@ -4,8 +4,12 @@
 	],
 	"modules": {
 		"root/main": "./src/main.js",
+
 		"root/#example": "./src/example/index.js",
-		"example/do-something": "./src/example/do-something.js"
+		"example/do-something": "./src/example/do-something.js",
+
+		"root/#another": "./src/another/index.js",
+		"another/do-more": "./src/another/do-more.js"
 	},
 	"creation": {
 		"main": "root/main"
