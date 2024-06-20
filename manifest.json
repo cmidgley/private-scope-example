@@ -1,10 +1,13 @@
 {
-	"include": "$(MODDABLE)/examples/manifest_base.json",
+	"include": [
+		"$(MODDABLE)/examples/manifest_base.json"
+	],
 	"modules": {
-		"*": "./main",
-		"#example": "./modules/example/index",
-		"./*": [
-			"./modules/example/do-something"
-		]
+		"root/main": "./src/main.js",
+		"root/#example": "./src/example/index.js",
+		"example/do-something": "./src/example/do-something.js"
+	},
+	"creation": {
+		"main": "root/main"
 	}
 }

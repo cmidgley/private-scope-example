@@ -7,6 +7,6 @@
         "run:node": "node --experimental-vm-modules --no-warnings main.js"
     },
     "imports": {
-        "#example": "./modules/example/index.js"
+        "#example": "./src/example/index.js"
     }
 }
